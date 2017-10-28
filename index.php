@@ -3,7 +3,7 @@
   <head>
     <?php
       require_once "functions/functions.php";
-      $title = "Новости природи";
+      $title = "Новости";
       require_once "blocks/head.php";
       $news = getNews (3);
     ?>

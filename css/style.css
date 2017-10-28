@@ -11,7 +11,7 @@ html {
 
 body {
   width: 100%;
-  background-color: #fff;
+  background-color: #e7e3e3;
   color: #333;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 1em;
@@ -84,7 +84,7 @@ header #menuHead div {
   font-size: 1.3em;
   padding: 2%;
   background-color: #9c9c9f;
-  border-radius: 45%;
+  border-radius: 20%;
   color: #060b16;
 }
 
@@ -167,6 +167,8 @@ header #regAuth div:hover {
 #wrapper #leftCol #bigArticle p, #wrapper #leftCol .article p {
   width: 90%;
   margin-left: 5%;
+  text-indent: 10px;
+  text-align: justify;
 }
 
 #wrapper #leftCol #bigArticle div, #wrapper #leftCol .article div {
@@ -197,7 +199,21 @@ header #regAuth div:hover {
 
 /*Страничка обратная связь*/
 
-#wrapper #leftCol input {
+#wrapper #form span {
+  width: 40%;
+  margin-left: 30%;
+  float: left;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  border: 2px solid silver;
+  color: #b82da6;
+  text-align: center;
+}
+
+#wrapper #form input {
   width: 40%;
   margin-left: 30%;
   float: left;
@@ -205,20 +221,20 @@ header #regAuth div:hover {
   border: 2px solid silver;
   padding: 5px;
   color: #3b9bd1;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 1.2em;
 }
 
-#wrapper #leftCol input:focus, #wrapper #leftCol textarea:focus {
+#wrapper #form input:focus, #wrapper #form textarea:focus {
   border: 2px solid #6735af;
 }
 
-#wrapper #leftCol input#done:hover {
+#wrapper #form input#done:hover {
   border: 2px solid #2e1cbe;
   cursor: pointer;
 }
 
-#wrapper #leftCol textarea {
+#wrapper #form textarea {
   width: 50%;
   height: 250px;
   margin-left: 25%;
@@ -227,28 +243,35 @@ header #regAuth div:hover {
   border: 2px solid silver;
   padding: 5px;
   color: #3b9bd1;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 1.2em;
   resize: none;
 }
 
-#wrapper #leftCol #messageShow {
+#messageShow {
   float: left;
+  margin-left: 40%;
   font-size: 1.2em;
   color: red;
   width: 100%;
-  text-align: center;
 }
 
 /*Стили для странички о нас*/
 
-#wrapper #leftCol #about_us {
+#wrapper  #about_us h2 {
+  text-align: center;
+}
+
+#wrapper  #about_us {
   float: left;
-  width: 76%;
+  width: 80%;
   margin-left: 10%;
   border: 1px solid silver;
   background-color: #e0dbd9;
   padding: 2%;
+  text-indent: 10px;
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 /*Стили для правой колонки*/
@@ -273,7 +296,6 @@ header #regAuth div:hover {
   width: 100%;
   float: right;
   margin-bottom: 10px;
-  border: 2px solid silver;
   box-sizing: border-box;
 }
 

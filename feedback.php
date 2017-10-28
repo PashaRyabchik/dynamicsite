@@ -45,16 +45,16 @@
   </head>
   <body>
     <?php require_once "blocks/header.php" ?>
+    <div id="messageShow"></div>
     <div id="wrapper">
-      <div id="leftCol">
+      <div id="form">
+        <span>Заполните пожалуйста все поля</span><br>
         <input type="text" name="name" placeholder="Имя" id="name"><br>
         <input type="text" name="email" placeholder="Email" id="email"><br>
         <input type="text" name="subject" placeholder="Тема сообщения" id="subject"><br>
         <textarea name="message" id="message" placeholder="Введите сюда ваше сообщение"></textarea><br>
-        <div id="messageShow"></div>
         <input type="button" name="done" id="done" value="Отправить">
       </div>
-        <?php require_once "blocks/rightCol.php" ?>
     </div>
     <?php require_once "blocks/footer.php" ?>
   </body>
