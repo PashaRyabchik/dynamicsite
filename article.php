@@ -15,7 +15,7 @@
         <?php
           echo '<div id="bigArticle"><img src="/img/articles/'.$news["id"].'.jpg" alt="'.$news["id"].'" title="Статья'.$news["id"].'">
           <h2>'.$news["title"].'</h2>
-          <p>'.$news["full_text"].'</p>
+          <p>'.$news["full_text"].'</p><div><a href="/">Назад</a></div>
           </div>';
          ?>
        </div>

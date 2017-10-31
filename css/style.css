@@ -250,10 +250,12 @@ header #regAuth div:hover {
 
 #messageShow {
   float: left;
-  margin-left: 40%;
-  font-size: 1.2em;
-  color: red;
-  width: 100%;
+  width: 40%;
+  text-align: center;
+  margin-left: 30%;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #1d80d4;
 }
 
 /*Стили для странички о нас*/
@@ -262,7 +264,7 @@ header #regAuth div:hover {
   text-align: center;
 }
 
-#wrapper  #about_us {
+#wrapper #about_us {
   float: left;
   width: 80%;
   margin-left: 10%;
@@ -272,6 +274,23 @@ header #regAuth div:hover {
   text-indent: 10px;
   text-align: justify;
   margin-bottom: 20px;
+}
+
+#wrapper #about_us img {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #c9c9c9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#wrapper #about_us a {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #303030;
+  color: #04eed2;
+  width: 10%;
+  text-align: center;
 }
 
 /*Стили для правой колонки*/

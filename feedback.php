@@ -24,7 +24,7 @@
           else if (message.length < 5)
             fail = "Сообщение не менее 20 символов";
           if (fail != "") {
-            $('#messageShow').html (fail + "<div class='clear'><br></div>");
+            $('#messageShow').html (fail + "<div class='clear' style='color: red;'></div>");
             $('#messageShow').show ();
             return false;
           }
@@ -45,8 +45,8 @@
   </head>
   <body>
     <?php require_once "blocks/header.php" ?>
-    <div id="messageShow"></div>
     <div id="wrapper">
+      <div id="messageShow">Напишите нам свое сообщение</div>
       <div id="form">
         <span>Заполните пожалуйста все поля</span><br>
         <input type="text" name="name" placeholder="Имя" id="name"><br>
