@@ -1,6 +1,6 @@
 <header>
     <div id="logo">
-      <a href="/" title="Перейти на            главную"><span>Ново</span>сти
+      <a href="/" title="Перейти на главную"><span>Ново</span>сти
       </a>
     </div>
     <div id="menuHead">
@@ -12,10 +12,10 @@
       </a>
     </div>
     <div id="regAuth">
-      <a href="/reg.php">
+      <a href="/regf.php">
         <div>Регистрация</div>
       </a>
-      <a href="/auth.php">
+      <a href="/authf.php">
         <div>Авторизация</div>
       </a>
     </div>

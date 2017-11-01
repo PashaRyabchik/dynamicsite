@@ -318,7 +318,6 @@ header #regAuth div:hover {
   box-sizing: border-box;
 }
 
-
 /*Стили для футера*/
 
 footer {
@@ -344,4 +343,10 @@ footer #rights {
   float: right;
   width: 50%;
   text-align: right;
+}
+
+/*Форма авторизации*/
+
+#auth, #reg {
+  background-color: #ddd8dd;
 }
