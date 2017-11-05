@@ -5,7 +5,6 @@
       $title = "Обратная связь";
       require_once "blocks/head.php"
     ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       $(document).ready (function () {
         $("#done").click (function () {
@@ -24,18 +23,18 @@
           else if (message.length < 5)
             fail = "Сообщение не менее 20 символов";
           if (fail != "") {
-            $('#messageShow').html (fail + "<div class='clear' style='color: red;'></div>");
+            $('#messageShow').html (fail).css('color', 'red');
             $('#messageShow').show ();
             return false;
           }
           $.ajax ({
-            url: '/ajax/feedback.php',
+            url: '/functions/feedback.php',
             type: 'POST',
             cache: false,
             data: {'name': name, 'email': email, 'subject': subject, 'message': message},
             dataType: 'html',
             success: function (data) {
-            $('#messageShow').html (data + "<div class='clear'><br></div>");
+            $('#messageShow').html (data).css('color', 'blue');
             $('#messageShow').show ();
               }
           });

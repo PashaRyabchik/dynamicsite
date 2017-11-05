@@ -5,10 +5,14 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <body id="auth">
     <div class="container">
-      <h2>Форма авторизации</h2><hr>
+      <h2>Форма авторизации</h2>
+      <hr>
+      <a href="index.php" class="btn btn-info" role="button">На главную</a>
+      <a href="regf.php" class="btn btn-primary" role="button">Регистрация</a>
+      <hr>
       <div class="row">
       <div class="col-sm-8 offset-sm-3">
-      <form class="form-horizontal" action="authf.php" method="post">
+      <form class="form-horizontal">
         <div class="form-group">
           <label class="col-sm-2" for="name">Имя:</label>
           <div class="col-sm-6">
@@ -33,25 +37,14 @@
               </div>";
           }
          ?>
-         <div class="form-group">
-           <div class="col-sm-offset-2 col-sm-10">
-             <div class="checkbox">
-               <label><input type="checkbox" name="remember" value="">Запомнить меня</label>
-             </div>
-           </div>
-         </div>
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
               <button type="submit" class="btn btn-primary">Вход</button>
             </div>
           </div>
-      </form>
-    </div>
-  </div>
-      <hr>
-      <a href="index.php" class="btn btn-info" role="button">На главную</a>
-      <a href="regf.php" class="btn btn-primary" role="button">Регистрация</a>
-      <hr>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
