@@ -1,10 +1,11 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html>
   <head>
-    <?php
-      require_once "functions/functions.php";
-      $title = "Новости";
+  <?php
       require_once "blocks/head.php";
+      $title = "Новости";
+      require_once "functions/functions.php";
       $news = getNews (3);
     ?>
   </head>

@@ -118,6 +118,14 @@ header #regAuth div:hover {
   border: 1px solid #161516;
 }
 
+header #regAuth span {
+  float: left;
+  padding: 2%;
+  color: #18f4ee;
+  font-size: 1.5em;
+  font-family: Comic Sans MS, sans-serif;
+}
+
 /*Стили для всего документа*/
 
 #wrapper {
