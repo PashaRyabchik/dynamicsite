@@ -1,5 +1,6 @@
 <?php
   require_once "connect.php";
+  //auth
   if (!empty($_POST['name']) && !empty($_POST['pass'])) {
     $name = htmlspecialchars($_POST['name']);
     $pass = htmlspecialchars($_POST['pass']);
@@ -8,7 +9,7 @@
     $db = $mysqli->query("SELECT * FROM `users` WHERE `name` = '$name'");
     $res = $db->fetch_assoc();
     closeDB();
-    if (md5($pass) == $res['password']) {
+    if (md5($pass.$res['salt']) == $res['password']) {
       session_start();
       $_SESSION['name'] = $name;
       echo "<script>

@@ -91,7 +91,7 @@ header #menuHead div {
 header #menuHead div:hover {
   background-color: #dad3d3;
   cursor: pointer;
-  color: #0c46f2;
+  color: #979ba8;
   border: 0;
 }
 
@@ -301,6 +301,10 @@ header #regAuth span {
   text-align: center;
 }
 
+#wrapper #about_us a:hover {
+  background-color: #9e9c9c;
+}
+
 /*Стили для правой колонки*/
 
 @media (min-width: 800px) {
@@ -317,7 +321,6 @@ header #regAuth span {
   float: left;
   }
 }
-
 
 #wrapper #rightCol .banner {
   width: 100%;
@@ -353,8 +356,22 @@ footer #rights {
   text-align: right;
 }
 
-/*Форма авторизации*/
+/*Форма авторизации и регистрации*/
 
-#auth, #reg {
-  background-color: #ddd8dd;
+#auth #wrapper a, #reg #wrapper a {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #4a4949;
+  color: #04eed2;
+  width: 10%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#auth #wrapper a:hover, #reg #wrapper a:hover {
+  background-color: #9e9c9c;
+}
+
+#auth #messageShow, #reg #messageShow {
+  padding: 10px;
 }

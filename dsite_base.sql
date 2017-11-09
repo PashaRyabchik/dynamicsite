@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Час створення: Лис 06 2017 р., 23:28
+-- Час створення: Лис 09 2017 р., 23:17
 -- Версія сервера: 5.6.37
 -- Версія PHP: 5.6.31
 
@@ -54,16 +54,17 @@ INSERT INTO `news` (`id`, `title`, `intro_text`, `full_text`, `img`) VALUES
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `password` varchar(100) NOT NULL,
+  `salt` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Дамп даних таблиці `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `password`) VALUES
-(11, 'Pasha', 'e10adc3949ba59abbe56e057f20f883e'),
-(17, 'Dasha', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `users` (`id`, `name`, `password`, `salt`) VALUES
+(1, 'Pasha', '61caeec45bd0b58c842b6e0652accd76', 'yY]<`M@W'),
+(2, 'Dasha', 'b5bb87ea5ac3fa32e4d88a5a0d8996d1', '41Cczv_y');
 
 --
 -- Індекси збережених таблиць
@@ -94,7 +95,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT для таблиці `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

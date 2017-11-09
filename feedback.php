@@ -55,6 +55,5 @@
         <input type="button" name="done" id="done" value="Отправить">
       </div>
     </div>
-    <?php require_once "blocks/footer.php" ?>
   </body>
 </html>
