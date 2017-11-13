@@ -87,13 +87,13 @@ header #menuHead div {
   padding: 2%;
   background-color: #9c9c9f;
   border-radius: 20%;
-  color: #060b16;
+  color: #eef448;
 }
 
 header #menuHead div:hover {
   background-color: #dad3d3;
   cursor: pointer;
-  color: #979ba8;
+  color: #eaee8f;
   border: 0;
 }
 
@@ -159,6 +159,7 @@ header #regAuth span {
   margin-left: 10%;
   background-color: #f6f6f6;
   padding: 1%;
+  border-radius: 1%;
   float: left;
 }
 
@@ -203,6 +204,7 @@ header #regAuth span {
   width: 40%;
   margin-left: 5%;
   background-color: #f6f6f6;
+  border-radius: 2%;
   padding: 1%;
   float: left;
 }
