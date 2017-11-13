@@ -1,6 +1,6 @@
 <header>
     <div id="logo">
-      <a href="/" title="Перейти на главную"><span>Ново</span>сти
+      <a href="/" title="Перейти на главную"><span>Приро</span>да
       </a>
     </div>
     <div id="menuHead">

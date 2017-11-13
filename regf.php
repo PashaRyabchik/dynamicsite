@@ -23,6 +23,11 @@
           fail = "Пароли не совпадают!";
         }
         if (fail != "") {
+          if (fail.indexOf('Имя') == 0) $('#name').css('border-color', 'red');
+          else $('#name').css('border-color', 'blue');
+          if (fail.indexOf('Пароль') == 0) $('#pass').css('border-color', 'red');
+          else $('#pass').css('border-color', 'blue');
+          if (fail.indexOf('Повторите') == 0) $('#passc').css('border-color', 'red');
           $('#messageShow').html (fail).css('color', 'red');
           $('#messageShow').show ();
           return false;
@@ -34,6 +39,7 @@
           data: {'name': name, 'pass': pass},
           dataType: 'html',
           success: function (data) {
+            $('#passc').css('border-color', 'blue'); 
             $('#messageShow').html(data).css('color', 'blue');
             $('#messageShow').show ();
           }

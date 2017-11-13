@@ -17,12 +17,19 @@
           if (name.length < 3)
            fail = "Имя не меньше 3 символов";
           else if (email.split ('@').length - 1 == 0 || email.split ('.').length - 1 == 0)
-            fail = "Вы ввели некректный email"
+            fail = "Вы ввели некорректный email"
           else if (subject.length < 5)
             fail = "Тема сообщения не менее 5 символов";
           else if (message.length < 5)
-            fail = "Сообщение не менее 20 символов";
+            fail = "Текст сообщения не менее 20 символов";
           if (fail != "") {
+            if (fail.indexOf('Имя') == 0)      $('#name').css('border-color', 'red');
+            else $('#name').css('border-color', 'blue');
+            if (fail.indexOf('Вы') == 0)      $('#email').css('border-color', 'red');
+            else $('#email').css('border-color', 'blue');
+            if (fail.indexOf('Тема') == 0)      $('#subject').css('border-color', 'red');
+            else $('#subject').css('border-color', 'blue');
+            if (fail.indexOf('Текст') == 0)      $('#message').css('border-color', 'red');
             $('#messageShow').html (fail).css('color', 'red');
             $('#messageShow').show ();
             return false;
@@ -34,8 +41,10 @@
             data: {'name': name, 'email': email, 'subject': subject, 'message': message},
             dataType: 'html',
             success: function (data) {
+            $('#message').css('border-color', 'blue');
             $('#messageShow').html (data).css('color', 'blue');
             $('#messageShow').show ();
+            setTimeout(function(){ window.location = 'http://dynamicsite/'; }, 3000);
               }
           });
         });

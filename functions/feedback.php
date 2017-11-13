@@ -11,7 +11,7 @@
   $subject = "=?utf-8?B?".base64_encode($subject)."?=";
   $headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
   if (mail("test@i.ua", $subject, $message, $headers))
-    echo '<p>Сообщение отправлено</p>';
+    echo '<p>Сообщение успешно отправлено</p>';
   else
     echo "Сообщение не отправлено";
 ?>

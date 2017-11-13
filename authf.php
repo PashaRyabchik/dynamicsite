@@ -16,6 +16,9 @@
           fail = "Введите пароль!";
         }
         if (fail != "") {
+          if (fail.indexOf('свое') == 8) $('#name').css('border-color', 'red');
+          else $('#name').css('border-color', 'blue');
+          if (fail.indexOf('пароль') == 8) $('#pass').css('border-color', 'red');
           $('#messageShow').html(fail).css('color', 'red');
           $('#messageShow').show ();
           return false;

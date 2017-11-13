@@ -31,7 +31,7 @@
            </script>";
         }
         else {
-          echo "Имя уже занято!";
+          echo "<span style = 'color: red'>Имя уже занято!</span>";
           closeDB();
         }
       }

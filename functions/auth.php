@@ -13,13 +13,11 @@
       session_start();
       $_SESSION['name'] = $name;
       echo "<script>
-         window.setTimeout(function(){
            window.location.href = 'http://dynamicsite/index.php';
-         }, 1000);
        </script>";
     }
     else {
-      echo "Пароль или имя не верны!";
+      echo "<span style = 'color: red'>Пароль или имя не верны!</span>";
     }
   }
  ?>

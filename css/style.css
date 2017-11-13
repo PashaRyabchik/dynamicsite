@@ -11,7 +11,8 @@ html {
 
 body {
   width: 100%;
-  background-color: #e7e3e3;
+  background-image: url(../img/backg.jpg);
+  background-attachment: fixed;
   color: #333;
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 1em;
@@ -52,7 +53,8 @@ header {
   width: 98%;
   float: left;
   padding: 1%;
-  background-color: #babab6;
+  background-image: url(../img/sky.png);
+  background-repeat: round;
   border-bottom: 2px solid #959590;
   margin-bottom: 20px;
 }
@@ -70,7 +72,7 @@ header #logo a {
 }
 
 header #logo span {
-  color: #177be4;
+  color: #25e417;
 }
 
 header #menuHead {
@@ -217,7 +219,7 @@ header #regAuth span {
   font-size: 1.3em;
   border-radius: 5px;
   border: 2px solid silver;
-  color: #b82da6;
+  color: #ecf425;
   text-align: center;
 }
 
@@ -228,7 +230,7 @@ header #regAuth span {
   border-radius: 5px;
   border: 2px solid silver;
   padding: 5px;
-  color: #3b9bd1;
+  color: #0c59f2;
   margin-bottom: 15px;
   font-size: 1.2em;
 }
@@ -263,7 +265,7 @@ header #regAuth span {
   margin-left: 30%;
   font-size: 1.3em;
   font-weight: 500;
-  color: #3113de;
+  color: #f7e54a;
 }
 
 /*Стили для странички о нас*/
@@ -335,8 +337,8 @@ footer {
   width: 98%;
   padding: 1%;
   float: left;
-  background-color: #babab6;
   border-top: 2px solid  #959590;
+  background-image: url(../img/foot.jpg);
 }
 
 footer #social {
@@ -345,6 +347,8 @@ footer #social {
 }
 
 footer #social img {
+  background-color: #f7fb97;
+  border-radius: 20%;
   float: left;
   width: 30px;
   height: 30px;
@@ -354,6 +358,8 @@ footer #rights {
   float: right;
   width: 50%;
   text-align: right;
+  color: #e8e41a;
+  font-size: 1.3em;
 }
 
 /*Форма авторизации и регистрации*/

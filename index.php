@@ -4,7 +4,7 @@
   <head>
   <?php
       require_once "blocks/head.php";
-      $title = "Новости";
+      $title = "Природа";
       require_once "functions/functions.php";
       $news = getNews (3);
     ?>
