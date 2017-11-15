@@ -39,7 +39,7 @@
           data: {'name': name, 'pass': pass},
           dataType: 'html',
           success: function (data) {
-            $('#passc').css('border-color', 'blue'); 
+            $('#passc').css('border-color', 'blue');
             $('#messageShow').html(data).css('color', 'blue');
             $('#messageShow').show ();
           }

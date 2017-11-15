@@ -80,6 +80,12 @@ header #menuHead {
   float: left;
 }
 
+@media (max-width: 650px){
+  header #menuHead {
+    display: none;
+  }
+}
+
 header #menuHead div {
   float: left;
   margin-left: 5%;
@@ -142,6 +148,7 @@ header #regAuth span {
 #wrapper #leftCol {
   width: 70%;
   margin-right: 10%;
+  margin-bottom: 1%;
   float: left;
   }
 }
@@ -150,6 +157,7 @@ header #regAuth span {
 #wrapper #leftCol {
   width: 90%;
   margin-right: 5%;
+  margin-bottom: 1%;
   float: left;
   }
 }
