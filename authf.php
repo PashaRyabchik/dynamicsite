@@ -9,10 +9,10 @@
         var name = $('#name').val ();
         var pass = $('#pass').val ();
         var fail = "";
-        if (name.length < 3) {
+        if (name.length < 3 || name.length > 12) {
           fail = "Введите свое имя!";
         }
-        else if (pass.length < 6) {
+        else if (pass.length < 6 || pass.length > 20) {
           fail = "Введите пароль!";
         }
         if (fail != "") {

@@ -10,13 +10,13 @@
         var pass = $('#pass').val ();
         var passc = $('#passc').val ();
         var fail = "";
-        if (name.length < 3) {
-          fail = "Имя не меньше 3 символов!";
+        if (name.length < 3 || name.length > 12) {
+          fail = "Имя не меньше 3 символов и не больше 12!";
         }
-        else if (pass.length < 6) {
-          fail = "Пароль не менее 6 символов!";
+        else if (pass.length < 6 || pass.length > 20) {
+          fail = "Пароль не меньше 6 символов и не больше 20!";
         }
-        else if (passc.length < 6) {
+        else if (passc.length < 6 || passc.length > 20) {
           fail = "Повторите пароль!";
         }
         else if (pass != passc) {

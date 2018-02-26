@@ -14,12 +14,12 @@
           var subject = $("#subject").val ();
           var message = $("#message").val ();
           var fail = "";
-          if (name.length < 3)
-           fail = "Имя не меньше 3 символов";
+          if (name.length < 3 || name.length > 12)
+           fail = "Имя не меньше 3 символов и не больше 12";
           else if (email.split ('@').length - 1 == 0 || email.split ('.').length - 1 == 0)
             fail = "Вы ввели некорректный email"
-          else if (subject.length < 5)
-            fail = "Тема сообщения не менее 5 символов";
+          else if (subject.length < 5 ||  subject.length > 30)
+            fail = "Тема сообщения не менее 5 символов и не больше 30";
           else if (message.length < 5)
             fail = "Текст сообщения не менее 20 символов";
           if (fail != "") {
